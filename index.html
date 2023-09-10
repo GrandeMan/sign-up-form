@@ -8,6 +8,55 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <div class="left-container">
+        <div class="hero">
+            <img class="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="TheOdinProject logo">
+            <p class="hero-text">ODIN</p>
+        </div>
+        <div class="footer">
+            <p>Photo by <a href="https://unsplash.com/photos/XAmgFP_GvVA">Kenrick Baksh</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="main-text">
+            <p>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up <em>now</em> to get started.
+            </p>
+            <p>You <em>know</em> what to do.</p>
+        </div>
+        <div class="form-container">
+            <p class="form-header">Let's do this!</p>
+            <form action="" method="get">
+                <div>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" name="fname" id="fname" required/>
+                </div>
+                <div>
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" name="lname" id="lname" required/>
+                </div>
+                <div>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" required/>
+                </div>
+                <div>
+                    <label for="num">PHONE NUMBER</label>
+                    <input type="tel" name="num" id="num" required/>
+                </div>
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" name="pwd" id="pwd" required/>
+                </div>
+                <div>
+                    <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                    <input type="password" name="pwd-confirm" id="pwd-confirm" required/>
+                </div>
+            </form>
+        </div>
+        <div class="btn-container">
+            <button type="submit">Create Account</button>
+            <p class="login">Already have and account? <a href="#">Log in</a></p>
+        </div>
+    </div>
 </body>
 </html>
