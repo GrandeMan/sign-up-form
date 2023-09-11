@@ -132,6 +132,17 @@ input {
     height: 1.5rem;
 }
 
+input[type=password]:invalid {
+    outline: rgba(220, 20, 60, 0.774) solid 1px;
+    box-shadow: 0 0 4px rgba(220, 20, 60, 0.726);
+}
+
+#pwd-error {
+    font-size: .75rem; 
+    color: rgba(220, 20, 60, 0.774);
+    margin-top: 0.25rem; 
+}
+
 input:focus { 
     outline: rgba(43, 149, 236, 0.774) solid 1px;
     box-shadow: 0 0 4px rgba(43, 149, 236, 0.644);
@@ -150,6 +161,10 @@ button {
     border-radius: .75rem;
     border: none;
     margin-bottom: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .btn-container a {

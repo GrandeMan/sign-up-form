@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="left-container">
@@ -26,7 +26,7 @@
         </div>
         <div class="form-container">
             <p class="form-header">Let's do this!</p>
-            <form action="" method="get">
+            <form action="#" method="get" id="sign-up">
                 <div>
                 <label for="fname">FIRST NAME</label>
                 <input type="text" name="fname" id="fname" required/>
@@ -50,11 +50,13 @@
                 <div>
                     <label for="pwd-confirm">CONFIRM PASSWORD</label>
                     <input type="password" name="pwd-confirm" id="pwd-confirm" required/>
+                    <div id="pwd-error"></div>
                 </div>
+
             </form>
         </div>
         <div class="btn-container">
-            <button id="submit">Create Account</button>
+            <button type="submit" id="submit">Create Account</button>
             <p class="login">Already have and account? <a href="#">Log in</a></p>
         </div>
     </div>
